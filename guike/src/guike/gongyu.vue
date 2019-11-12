@@ -2,7 +2,7 @@
   <div>
     <div v-for="(item,i) of list" :key="i">
       <div class="fangjian">
-        <img class="zhaopian" :src="'http://127.0.0.1:4000/'+item.img" alt="">
+        <img class="zhaopian" :src="url+item.img" alt="">
         <div class="xiangxi">
           <h4>{{item.title}}</h4>
           <p class="xiangxi-1">{{item.address}}</p>
@@ -10,7 +10,7 @@
         </div>
       </div>
     </div>
-    <mt-button class="mbtn-top" type="primary" size="large" @click="loadMore">加载更多</mt-button> 
+    <mt-button class="mbtn-top" type="primary" size="large" @click="loadMore">加载更多</mt-button>
   </div>
 </template>
 <script>
@@ -18,7 +18,8 @@ export default {
   data() {
     return {
       list: [],
-      pno: 0
+      pno: 0,
+      url:"http://118.190.162.12:4000/"
     };
   },
   created() {
@@ -80,6 +81,6 @@ export default {
 }
 .mbtn-top{
      margin-bottom:60px;
-     background-color:#ed8117;
+     background-color:#ed8117 !important;
  }
 </style>

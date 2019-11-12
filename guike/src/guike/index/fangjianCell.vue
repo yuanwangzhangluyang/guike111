@@ -14,7 +14,7 @@
     </div>
     <router-link :to="{path:'/detail',query:{hid:item.hid}}" v-for="(item,i) of list" :key="i">
       <div class="fangjian">
-        <img class="zhaopian" :src="'http://127.0.0.1:4000/'+item.img" alt="">
+        <img class="zhaopian" :src="url+item.img" alt="">
         <div class="xiangxi">
           <h4>{{item.title}}</h4>
           <p class="xiangxi-1">{{item.address}}</p>
@@ -31,7 +31,8 @@ export default {
     return {
       show: false,
       list: [],
-      pno: 0
+      pno: 0,
+      url:"http://118.190.162.12:4000/"
     };
   },
   created() {
@@ -57,7 +58,7 @@ export default {
 <style>
 /* 头部 */
 .mint-header {
-  background-color: #ed8117;
+  background-color: #f1a43a !important;
   font-size: 15px;
   height: 45px;
 }
@@ -112,7 +113,7 @@ export default {
 }
 .mbtn-top{
      margin-bottom:10px;
-     background-color:#ed8117;
+     background-color:#f1a43a;
  }
 </style>
 

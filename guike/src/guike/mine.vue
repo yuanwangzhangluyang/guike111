@@ -86,7 +86,7 @@ export default {
             if(this.uid!=undefined){
                 this.$router.push("/shezhi");
             }else{
-                this.$router.push("/login");
+                this.$router.push("/zhuce");
             }
         }
     },

@@ -9,15 +9,36 @@ Vue.config.productionTip = false
 //5.引入axios模块
 import axios from "axios"
 //6.配置服务器基础路径
-axios.defaults.baseURL = "http://127.0.0.1:4000"
+axios.defaults.baseURL = "http://118.190.162.12:4000"
 //7.配置保留session信息
 axios.defaults.withCredentials = true
 //8.axios 注册vue
 Vue.prototype.axios = axios
-//9.引入vuex第三方模块
-import Vuex from "vuex"
-//10.先注册vuex
-Vue.use(Vuex)
+
+
+// import Vuex from "vuex"
+// Vue.use(Vuex)
+// var store=new Vuex.Store({
+//   state:{cartCount:0},
+//   mutations:{
+//     addCart(state){state.cartCount++},
+//     // clearCart(state){state.cartCount=0}
+//   },
+//   getters:{
+//     getCart(state){
+//       return state.cartCount;
+//     }
+//   },
+//   actions:{
+//     modifyCount:(context)=>{
+//       setTimeout(()=>{// 模拟异步操作
+//        // 调用mutations
+//        context.commit("clear")
+//       },500)
+     
+//    }
+//   }
+// })
 
 //功能 引入第三方组件库mint-ui
 //1完整引入mint-ui组件库中的所有组件
@@ -33,6 +54,7 @@ import { Divider } from 'vant'
 Vue.use(Divider)
 import { Grid, GridItem } from 'vant';
 Vue.use(Grid).use(GridItem);
+
 
 /* eslint-disable no-new */
 new Vue({

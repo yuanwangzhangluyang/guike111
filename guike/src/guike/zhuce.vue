@@ -93,6 +93,7 @@ html {
   /* padding: 0px; */
   font-size: 17px;
   font-family: 微软雅黑;
+  background-color:#f1a43a !important;
 }
 .mint-header {
   background: #fff;
@@ -133,8 +134,8 @@ html {
   width: 100%;
   height: 40px;
   margin-top: 10px;
-  color: #8e8e8e;
-  background-color: #f1a43a;
+  color: #fff;
+  background-color:#f1a43a !important;
   box-shadow: 0 0 1px #7d7f81;
   border-radius: 4px;
   border: 0;

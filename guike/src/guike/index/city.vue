@@ -37,7 +37,7 @@ html {
   font-family: 微软雅黑;
 }
 .mint-header {
-  background: #f1a43a;
+  background: #f1a43a !important;
   color: #282828;
   box-shadow: 0 0 1px #7d7f81;
 }

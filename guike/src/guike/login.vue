@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 导航栏 -->
-    <mt-header id="head" title="登录">
+    <mt-header id="head1" title="登录">
       <router-link to="/" slot="left">
         <mt-button icon="back"></mt-button>
       </router-link>
@@ -19,7 +19,7 @@
 
     <!-- 登录按钮 -->
     <!-- <button id="d1" @click="login">登录</button> -->
-    <mt-button id="d1" size="large" @click="login">登 录</mt-button>
+    <mt-button id="d2" size="large" @click="login">登 录</mt-button>
   </div>
 </template>
 
@@ -71,12 +71,13 @@ html {
   margin: 0;
   padding: 0;
 }
-#head {
+#head1 {
   width: 100%;
   height: 46px;
   /* padding: 0px; */
   font-size: 17px;
   font-family: 微软雅黑;
+  background-color:#f1a43a !important;
 }
 .mint-header {
   background: #fff;
@@ -98,7 +99,7 @@ html {
   margin-top: 10px;
   margin-left: 10px;
 }
-#d1 {
+#d2 {
   color: #fff;
   background-color: #f1a43a;
   margin-top: 20px;

@@ -1,15 +1,15 @@
 <template>
     <div>
-        <div id="slider">
-            <mt-swipe :auto="4000">
+        <div id="sli">
+            <mt-swipe style="height:175px;">
                 <mt-swipe-item>
-                    <img src="../assets/fuwu/6370077037697055282907663.jpg" alt="">
+                    <img src="../assets/fuwu/fuwu1.jpg" alt="">
                 </mt-swipe-item>
                 <mt-swipe-item>
-                    <img src="../assets/fuwu/6366352912764670415659245.png" alt="">
+                    <img src="../assets/fuwu/fuwu2.png" alt="">
                 </mt-swipe-item>
                 <mt-swipe-item>
-                    <img src="../assets/fuwu/6369776226135329332560637.jpg" alt="">
+                    <img src="../assets/fuwu/fuwu3.jpg" alt="">
                 </mt-swipe-item>
             </mt-swipe>
         </div>
@@ -85,11 +85,8 @@
 </template>
 <style>
 /* 轮播图 */
-#slider img {
+#sli img {
   width: 100%;
-}
-.mint-swipe {
-  height: 175px;
 }
 /* 服务列表按钮 */
 ul,li{

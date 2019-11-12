@@ -32,17 +32,16 @@ CREATE TABLE guike_house(
   chaoxiang VARCHAR(10)
 );
 
--- /**房间详情**/
--- CREATE TABLE guike_detail(
---   did INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
---   title VARCHAR(50) NOT null,
---   price DECIMAL(8,2),
---   leixing VARCHAR(10),
---   huxing VARCHAR(10),
---   louceng VARCHAR(10),
---   mianji VARCHAR(10),
---   chaoxiang VARCHAR(10)
--- );
+/**收藏详情**/
+CREATE TABLE guike_cart(
+  hid INT PRIMARY KEY,
+  count INT,
+  img VARCHAR(128),
+  title VARCHAR(50) NOT null,
+  address VARCHAR(50) NOT null,
+  price DECIMAL(8,2),
+  uid int
+ );
 
 /**房间详情照片**/
 CREATE TABLE guike_detail_pic(
@@ -72,7 +71,7 @@ INSERT INTO guike_house VALUES(6,'gongyu/6.jpg','及时雨','来宾路建设路1
 INSERT INTO guike_house VALUES(7,'gongyu/7.jpg','蓝色海岸','迎宾大道湖西路往南100米',1700,'整租','标间',12,50,'南');
 INSERT INTO guike_house VALUES(8,'gongyu/8.jpg','莱茵小驻','桐柏路农业路往南100米',1500,'整租','标间',15,50,'南');
 INSERT INTO guike_house VALUES(9,'gongyu/9.jpg','苏格拉底','文化路金水路99号',1580,'整租','标间',20,50,'南');
-INSERT INTO guike_house VALUES(10,'gongyu/1.jpg','别树一阁','第八大街与京北路东400米路东',1800);
+INSERT INTO guike_house VALUES(10,'gongyu/1.jpg','别树一阁','第八大街与京北路东400米路东',1800,'整租','标间',20,50,'南');
 INSERT INTO guike_house VALUES(11,'gongyu/2.jpg','藏宝海湾','十里铺街南113号',2080,'整租','标间',5,50,'南');
 INSERT INTO guike_house VALUES(12,'gongyu/3.jpg','东窗思雨','平安大道西大街南10号',1660,'整租','标间',5,50,'南');
 INSERT INTO guike_house VALUES(13,'gongyu/4.jpg','伐木累','西湖大道城东路往南100米',2500,'整租','标间',5,50,'南');
@@ -105,16 +104,3 @@ INSERT INTO guike_detail_pic VALUES(5,'detail/lunbo5/1.jpg');
 INSERT INTO guike_detail_pic VALUES(5,'detail/lunbo5/2.jpg');
 INSERT INTO guike_detail_pic VALUES(5,'detail/lunbo5/3.jpg');
 INSERT INTO guike_detail_pic VALUES(5,'detail/lunbo5/4.jpg');
-
-
-
-/**房间详情信息*5/
--- INSERT INTO guike_detail VALUES(NULL,'别树一阁',1800,'整租','标间',5,50,'南');
--- INSERT INTO guike_detail VALUES(NULL,'藏宝海湾',2080,'整租','两室一厅',19,88,'南');
--- INSERT INTO guike_detail VALUES(NULL,'东窗思雨',1660,'整租','标间',7,50,'南');
--- INSERT INTO guike_detail VALUES(NULL,'伐木累',2500,'整租','两室一厅',16,100,'南');
--- INSERT INTO guike_detail VALUES(NULL,'旮沓小屋',1900,'整租','标间',9,60,'南');
--- INSERT INTO guike_detail VALUES(NULL,'及时雨',1880,'整租','标间',10,50,'南');
--- INSERT INTO guike_detail VALUES(NULL,'蓝色海岸',1700,'整租','标间',12,50,'南');
--- INSERT INTO guike_detail VALUES(NULL,'莱茵小驻',1500,'整租','标间',15,50,'南');
--- INSERT INTO guike_detail VALUES(NULL,'苏格拉底',1580,'整租','标间',20,50,'南');
